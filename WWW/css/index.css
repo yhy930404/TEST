@@ -1,0 +1,457 @@
+/* CSS Document */
+
+.navbar-a {
+    border-radius: 50px;
+    margin: 2rem;
+    padding: 0.5vw 3vw;
+    box-shadow: 3px 2px 7px rgba(0,0,0,0.5);
+    transition: .5s;
+}
+
+#sbox {
+  max-width: 130px;
+}
+.fw {
+  font-weight: bold;
+}
+/*
+.cc {
+  margin-top: 0px;
+  background-position: center 5px;
+  margin: -0.1% 5%;
+  transition: .4s ease-out;
+  z-index: 200;
+  box-shadow: 1px 1px 8px 5px rgba(0, 0, 0, 0.2);
+}
+*/
+
+.cc{
+    margin-top: 0px;
+    transition: .4s ease-out;
+    margin: -0.1% 5%;
+    background-position: center 5px;
+    box-shadow: 1px 1px 9px 2px rgba(0,0,0,0.2);
+}
+
+
+
+.logo_space {
+  width: 390px;
+}
+.icon_space {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: block;
+}
+.inshadow .shadow_a, .inshadow .shadow_b {
+  text-shadow: rgba(255, 255, 255, 0.5)0px 3px 3px;
+  font-size: 6vw;
+  letter-spacing: 15px;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  margin-top: 100px;
+}
+.inshadow .shadow_a {
+  background-color: #ee7d62;
+}
+.inshadow .shadow_b {
+  background-color: #6C87B1;
+}
+.about {
+  background-color: #FFFFFF;
+  width: 20%;
+  height: 280px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  writing-mode: vertical-rl;
+  align-items: center;
+  padding-top: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: 0.4s;
+  transform: translateY(0em);
+}
+.about:hover {
+  transform: translateY(-0.85em);
+  transition: 0.4s;
+  box-shadow: 1px 2px 9px 1px rgba(0, 0, 0, 0.1);
+}
+.about:hover > h4 {
+  color: #8BCBB4;
+}
+.sit {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+/*  width: 100%;*/
+  height: 400px;
+}
+.cover {
+  margin: 0;
+  padding: 0;
+}
+.size {
+  width: 100%;
+  height: 100%;
+}
+
+/* 觸發前預設樣式 */
+.special_title {  
+  width: 85%; /*設定寬度*/
+  border: thin none #C3C3C3;/*	外框線設定樣式為細薄且不具寬度最後設定邊框顏色*/
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2); /*設定陰影顏色*/
+  transform: rotate(-5deg); /*設定物件預設樣式之旋轉程度 逆時針尋轉5*/
+  background-color: #FFFFFF; /*背景色*/
+  transition: 0.3s; /*游標離開接觸物件後的動畫觸發時間*/
+  margin-right: auto; /*將該物件擠至最右測*/
+}
+
+/* 觸發後(鼠標接觸)樣式 */
+.special_title:hover { 
+  transform: rotate(0deg);  /*設定物件旋轉程度為0*/
+  transform: scale(1.1);  /*物件放大1.1倍*/
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.1); /*設定陰影顏色*/
+}
+
+/*疊加效果在.special_title之內 */
+.special_title::before {
+  content: "";   /*必須與before搭配使用 才會有效果出來*/
+  transform: rotate(-35deg); /*設定物件傾斜程度為逆時針轉35*/
+  width: 65px; /*寬度*/
+  height: 25px; /*高度*/
+  top: -0.5rem; /*上方距離*/
+  left: -1.5rem; /*左邊距離*/
+  background-color: #FFD647; /*背景色*/
+  position: absolute; /*絕對定位*/
+}
+.special_item {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: bolder;
+}
+.special_title1 {
+  width: 80%;
+  border: thin none #C3C3C3;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+  transform: rotate(5deg);
+  background-color: #FFFFFF;
+  transition: 0.3s;
+  margin-left: auto;
+}
+.special_title1:hover {
+  transform: rotate(0deg);
+  transform: scale(1.1);
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.1);
+}
+.special_title1::before {
+  content: "";
+  background-color: #E89C48;
+  width: 65px;
+  height: 25px;
+  position: absolute;
+  transform: rotate(35deg);
+  top: -0.6rem;
+  right: -1.5rem;
+}
+.title-big {
+  font-weight: bold;
+  /*    text-shadow: 0px 0px 3px #000000;*/
+  font-size: 4.5rem;
+}
+.title2-big {
+  font-weight: bold;
+  text-shadow: 0px 0px 2px #000000;
+  font-size: 2.5rem;
+}
+.go_down {
+  position: absolute;
+  bottom: 60px;
+  animation: heartBeat 1.4s infinite;       
+}
+.far {
+  margin-top: 80px;
+}
+.shop {
+  width: 100%;
+  height: 550px;
+  padding: 20px;
+  background-color: #6BBC9F;
+  border-radius: 25px;
+}
+.shop_title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.shop_artical {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 3px;
+}
+.loud {
+  position: relative;
+  display: flex;
+}
+.shop_form {
+  background-color: #6BBC9F;
+  padding: 20px;
+  border-radius: 5px;
+}
+.f_a {
+  width: 95%;
+}
+.box {
+  overflow: hidden;
+}
+.big {
+  transition: 0.3s;
+}
+.big:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+.line {
+  line-height: 30px;
+}
+#top {
+  position: fixed;
+  z-index: 99;
+  right: 30px;
+  bottom: 130px;
+}
+#ro {
+  position: fixed;
+  z-index: 99;
+  right: 30px;
+  bottom: 25px;
+}
+.pointer {
+  cursor: pointer;
+}
+#robot {
+  display: block;
+  position: fixed;
+  z-index: 99;
+  padding: 25px;
+  height: 400px;
+  width: 280px;
+  background-color: #EFEFEF;
+  right: 10px;
+  bottom: 110px;
+  border-radius: 20px;
+  border: 1px solid #A7A7A7;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#rotalk {
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 76%;
+}
+#roask {
+  display: block;
+  position: absolute;
+  padding: 5px;
+  width: 80%;
+  bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+.m1 {
+  width: 190px;
+  background-color: #E89F83;
+  color: #FFFFFF;
+  padding: 10px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.m2 {
+  width: 190px;
+  background-color: #93BCE3;
+  color: #FFFFFF;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.ro_btn {
+  position: absolute;
+  bottom: 61px;
+  right: 43px;
+}
+.qa {
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+.qa_q {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.note {
+  width: 75%;
+  padding-left: 5px;
+}
+.good {
+  display: flex;
+}
+.bee {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 5px;
+}
+.page_end {
+  background-image: url(../img/end.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100%;
+  background-position: top;
+  overflow: hidden;
+}
+.page_end::before {
+    content: "";
+    background-color: rgba(90,112,155,0.50);
+    transform: skewX(-18deg);
+    position: absolute;
+    width: 45%;
+    height: 44.8rem;
+    right: 700px;
+/*    overflow: hidden;*/
+}
+.end_form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 15px;
+	margin-top: 63px;
+}
+.note1 {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.font-size {
+  font-size: 18px;
+  font-weight: bold;
+}
+.say {
+  margin-top: 5px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.mean_a {
+    display: flex;
+/*    position: fixed;*/
+    
+}
+
+.mean {
+    flex-wrap: wrap-reverse;
+    display: flex;
+}
+
+#user_b {
+    color: #545454;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#user_b:hover{
+    text-decoration: none;		
+}
+
+
+.lh {
+    line-height: 25px;
+    text-align: justify;
+    padding:5px;
+}
+
+.img_h{
+	transition: 0.4s;
+}
+
+.img_h:hover {
+	transition: 0.3s;
+	transform: rotate(-10deg);
+}
+
+.ooo {
+    width: 180px;
+    height: 200px;
+/*    border: thin solid;*/
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 49px;
+    animation: pulse 1.3s infinite;
+    -webkit-animation: pulse 1.3s infinite;
+    border: thin solid #818181;
+}
+
+.special {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.page_special {
+    background-image: url(../img/b_bg_yellow_01.jpg);
+    background-position: 0% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+/*    background-color: rgba(0,0,0,0.5);*/
+    
+}
+
+.bs {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.a_h {
+    color: #B0B0B0;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-left: 10px;
+    transition: 0.4s;
+}
+
+.a_h:hover{
+    color: #F29B87;
+    transition: 0.4s;
+}
+
+
+.page3 {
+    background-color: #F3F3F3;
+}
+
+.page2 {
+    background-image: url(../img/p1.png);
+}
+
+.page5 {
+    background-image: url(../img/p11.jpg);	
+}
